@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <div class="navbar__logo"><img src="img/logo.svg" alt="Logo"></div>
+            <nav class="navbar__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#">Custom Works</a></li>
+                    <li class="menu__item"><a href="#">Moto</a></li>
+                    <li class="menu__item"><a href="#">Snow</a></li>
+                    <li class="menu__item"><a href="#">Bike</a></li>
+                    <li class="menu__item"><a href="#">Promocje</a></li>
+                    <li class="menu__item"><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="navbar__shop">
+                <input class="searchbar" type="text" placeholder="szukaj...">
+                <div class="navbar__icon">
+                    <a href="#"><img src="img/user_icon.svg" alt="Ikona użytkownika"></a>
+                </div>
+                <div class="navbar__icon">
+                    <a href="#"><img src="img/cart_icon.svg" alt="Ikona koszyka"></a>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slides">
+              <div class="slide" id="slide1"><div class="slide__text"><h2>ZBROJE MOTOCYKLOWE</h2><p>Tutaj znajdziesz najlepszy sprzęt i akcesoria motocyklowe i wiele więcej.</p><button>ZOBACZ WIĘCEJ</button></div></div>
+              <div class="slide" id="slide2"><div class="slide__text"><h2>ZBROJE MOTOCYKLOWE</h2><p>Tutaj znajdziesz najlepszy sprzęt i akcesoria motocyklowe i wiele więcej.</p><button>ZOBACZ WIĘCEJ</button></div></div>
+              <div class="slide" id="slide3"><div class="slide__text"><h2>ZBROJE MOTOCYKLOWE</h2><p>Tutaj znajdziesz najlepszy sprzęt i akcesoria motocyklowe i wiele więcej.</p><button>ZOBACZ WIĘCEJ</button></div></div>
+            </div>
+            <button class="arrow prev" onclick="moveSlide(-1)"><img src="img/arrow-left.svg" alt=""></button>
+            <button class="arrow next" onclick="moveSlide(1)"><img src="img/arrow-right.svg" alt=""></button>
+            <div class="pagination">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+
+    </header>
+    <section class="offer">
+        <h2 class="section__title">NASZA OFERTA</h2>
+        <div class="section__container">
+            <div class="offer__single">
+                <img src="img/customworks.svg" alt="Icon">
+                <h3 class="offer__subtitle">CUSTOM WORKS</h3>
+                <p class="offer__text">Spersonalizuj swój kombinezon dobierając rozmiar, kolor i naszywki</p>
+                <a href="#" class="offer__more">Czytaj więcej</a>
+            </div>
+            <div class="offer__single">
+                <img src="img/moto.svg" alt="Icon">
+                <h3 class="offer__subtitle">MOTO</h3>
+                <p class="offer__text">W tej kategorii znajdziesz ubrania dla motocyklisty – spodnie motocyklowe...</p>
+                <a href="#" class="offer__more">Czytaj więcej</a>
+            </div>
+            <div class="offer__single">
+                <img src="img/snow.svg" alt="Icon">
+                <h3 class="offer__subtitle">SNOW</h3>
+                <p class="offer__text">Specjalistyczny sklep snowboardowy. Nawyższj klasy deski Viru i F2...</p>
+                <a href="#" class="offer__more">Czytaj więcej</a>
+            </div>
+            <div class="offer__single">
+                <img src="img/bike.svg" alt="Icon">
+                <h3 class="offer__subtitle">BIKE</h3>
+                <p class="offer__text">Dainese BIKE. Najwyższej jakości ochraniacze i odzież rowerowa...</p>
+                <a href="#" class="offer__more">Czytaj więcej</a>
+            </div>
+        </div>
+    </section>
+    <section class="popular">
+        <h2 class="section__title">POPULARNE PRODUKTY</h2>
+        <div class="section__container products__container">
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/helmet1.png" alt="Kask">
+                    <div class="product__overlay">
+                        <div class="product__new">NEW</div>
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Kask Motocyklowy AGV Pista GP RR Futuro Carbonio Forgiato</a>
+                    <div class="product__price">
+                        <span class="price__current">7 595,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/shoes.png" alt="Buty">
+                    <div class="product__overlay">
+                        <div class="product__new">NEW</div>
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Buty Motocyklowe Dainese TRQ-Race Out Białe</a>
+                    <div class="product__price">
+                        <span class="price__current">599,40 ZŁ</span>
+                        <span class="price__old">999,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/jacket.png" alt="Bluza">
+                    <div class="product__overlay">
+                        <div class="product__new">NEW</div>
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Bluza dziecięca Dainese The Doctor 46 Kid Hoodie Żółta</a>
+                    <div class="product__price">
+                        <span class="price__current">185,50 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/helmet2.png" alt="Kask">
+                    <div class="product__overlay">
+                        <div class="product__new">NEW</div>
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Kask motocyklowy AGV Pista GP RR Misano 2019</a>
+                    <div class="product__price">
+                        <span class="price__current">7 349,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newproducts carousel">
+        <h2 class="section__title">Nowe produkty</h2>
+        <div class="section__container products__container carousel__wrapper">
+            <div class="carousel__left"><img src="img/carouselleft.svg"></div>
+            <div class="carousel__right"><img src="img/carouselright.svg"></div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/helmet2.png" alt="Kask">
+                    <div class="product__new">NEW</div>
+                    <div class="product__overlay">
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Kask motocyklowy AGV Pista GP RR Misano 2019</a>
+                    <div class="product__price">
+                        <span class="price__current">7 349,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/jacket.png" alt="Kask">
+                    <div class="product__new">NEW</div>
+                    <div class="product__overlay">
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Bluza dziecięca Dainese The Doctor 46 Kid Hoodie Żółta</a>
+                    <div class="product__price">
+                        <span class="price__current">185,50 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/helmet1.png" alt="Kask">
+                    <div class="product__new">NEW</div>
+                    <div class="product__overlay">
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Kask Motocyklowy AGV Pista GP RR Futuro Carbonio Forgiato</a>
+                    <div class="product__price">
+                        <span class="price__current">7 595,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/shoes.png" alt="Kask">
+                    <div class="product__new">NEW</div>
+                    <div class="product__overlay">
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Buty Motocyklowe Dainese TRQ-Race Out Białe</a>
+                    <div class="product__price">
+                        <span class="price__current --discounted">599,40 ZŁ</span>
+                        <span class="price__old">999,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/helmet1.png" alt="Kask">
+                    <div class="product__new">NEW</div>
+                    <div class="product__overlay">
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Kask Motocyklowy AGV Pista GP RR Futuro Carbonio Forgiato</a>
+                    <div class="product__price">
+                        <span class="price__current">7 595,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/shoes.png" alt="Kask">
+                    <div class="product__new">NEW</div>
+                    <div class="product__overlay">
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Buty Motocyklowe Dainese TRQ-Race Out Białe</a>
+                    <div class="product__price">
+                        <span class="price__current --discounted">599,40 ZŁ</span>
+                        <span class="price__old">999,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__photo">
+                    <img src="img/helmet1.png" alt="Kask">
+                    <div class="product__new">NEW</div>
+                    <div class="product__overlay">
+                        <div class="product__discount">-40%</div>
+                        <a href="#" class="add__favourite"><img src="img/favourite.svg" alt="Ulubione"></a>
+                        <a href="#" class="add__cart">Dodaj do koszyka <img src="img/addtobasket.svg" alt="Ikona koszyka"></a>
+                    </div>
+                </div>
+                <div class="product__info">
+                    <a href="#" class="product__title">Kask Motocyklowy AGV Pista GP RR Futuro Carbonio Forgiato</a>
+                    <div class="product__price">
+                        <span class="price__current">7 595,00 ZŁ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="companies">
+        <h2 class="section__title">NASI PARTNERZY</h2>
+        <div class="companies__logos">
+            <img src="img/partner1.png" alt="Logo partnera">
+            <img src="img/partner2.png" alt="Logo partnera">
+            <img src="img/partner3.png" alt="Logo partnera">
+            <img src="img/partner4.png" alt="Logo partnera">
+            <img src="img/partner5.png" alt="Logo partnera">
+            <img src="img/partner6.png" alt="Logo partnera">
+            <img src="img/partner7.png" alt="Logo partnera">
+            <img src="img/partner8.png" alt="Logo partnera">
+            <img src="img/partner9.png" alt="Logo partnera">
+            <img src="img/partner10.png" alt="Logo partnera">
+            <img src="img/partner1.png" alt="Logo partnera">
+            <img src="img/partner2.png" alt="Logo partnera">
+            <img src="img/partner3.png" alt="Logo partnera">
+        </div>
+        <div class="companies__nav">
+            <div class="companies__left"><img src="img/carouselleft.svg"></div>
+            <div class="companies__right"><img src="img/carouselright.svg"></div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="newsletter__text">
+            <h2 class="section__title --white">NEWSLETTER</h2>
+            <p class="newsletter__subtitle">Otrzymuj informację o nowościach i wyprzedażach</p>
+        </div>
+        <form class="newsletter__form">
+            <div class="newsletter__inputs">
+                <input placeholder="Twój adres e-mail" type="email" name="email" id="input__email">
+                <input id="input__submit" type="submit" value="Subskrybuj">
+            </div>
+            <p class="form__text">
+                Możesz zrezygnować w każdej chwili. W tym celu należy odnaleźć szczegóły w naszej informacji prawnej.
+            </p>
+        </form>
+    </section>
+    <section class="blog">
+        <div class="blog__header">
+            <h2 class="section__title">Blog</h2>
+            <p class="blog__subtitle">Tutaj znajdziesz najciekawsze wiadomości</p>
+            <a href="#"><button class="blog__more">Wszystkie nowości</button></a>
+            <div class="blog__nav">
+                <div class="blog__left"><img src="img/carouselleft.svg"></div>
+                <div class="blog__right"><img src="img/carouselright.svg"></div>
+            </div>
+        </div>
+        <div class="blog__articles">
+            <article class="blog__single">
+                <img src="img/article1.png">
+                <div class="article__text">
+                    <h4 class="article__title">Jak dobrać kombinezon motocyklowy?</h4>
+                    <span class="article__date">15.10.2021</span>
+                    <p class="article__pharagraph">
+                        Szukasz odpowiedniego prezentu dla motocyklisty? Wielkimi krokami zbliżają się święta Bożego Narodzenia a Ty nadal nie masz prezentu? O nic się nie martw! Przygotowaliśmy krótki artykuł, który pomoże Ci w wyborze sprawdzonego prezentu dla motocyklisty.
+                    </p>
+                    <a href="#"><button class="article__more">CZYTAJ WIĘCEJ</button></a>
+                </div>
+            </article>
+            <article class="blog__single">
+                <img src="img/article2.png">
+                <div class="article__text">
+                    <h4 class="article__title">Praktyczny prezent dla motocyklisty</h4>
+                    <span class="article__date">15.10.2021</span>
+                    <p class="article__pharagraph">
+                        Każdy, kto jeździ motocyklem powinien zadbać o odpowiedni strój oraz wyposażenie, które zapewni jej pełen komfort oraz bezpieczeństwo podczas jazdy. Poza takimi elementami jak kask, odpowiednie obuwie bardzo istotną sprawą jest też strój na ...
+                    </p>
+                    <a href="#"><button class="article__more">CZYTAJ WIĘCEJ</button></a>
+                </div>
+            </article>
+            <article class="blog__single">
+                <img src="img/article3.png">
+                <div class="article__text">
+                    <h4 class="article__title">Jak dobrać kombinezon motocyklowy?</h4>
+                    <span class="article__date">15.10.2021</span>
+                    <p class="article__pharagraph">
+                        Każdy, kto jeździ motocyklem powinien zadbać o odpowiedni strój oraz wyposażenie, które zapewni jej pełen komfort oraz bezpieczeństwo podczas jazdy. Poza takimi elementami jak kask, odpowiednie obuwie bardzo istotną sprawą jest też strój na ...
+                    </p>
+                    <a href="#"><button class="article__more">CZYTAJ WIĘCEJ</button></a>
+                </div>
+            </article>
+            <article class="blog__single">
+                <img src="img/article1.png">
+                <div class="article__text">
+                    <h4 class="article__title">Jak dobrać kombinezon motocyklowy?</h4>
+                    <span class="article__date">15.10.2021</span>
+                    <p class="article__pharagraph">
+                        Każdy, kto jeździ motocyklem powinien zadbać o odpowiedni strój oraz wyposażenie, które zapewni jej pełen komfort oraz bezpieczeństwo podczas jazdy. Poza takimi elementami jak kask, odpowiednie obuwie bardzo istotną sprawą jest też strój na ...
+                    </p>
+                    <a href="#"><button class="article__more">CZYTAJ WIĘCEJ</button></a>
+                </div>
+            </article>
+            <article class="blog__single">
+                <img src="img/article1.png">
+                <div class="article__text">
+                    <h4 class="article__title">Jak dobrać kombinezon motocyklowy?</h4>
+                    <span class="article__date">15.10.2021</span>
+                    <p class="article__pharagraph">
+                        Każdy, kto jeździ motocyklem powinien zadbać o odpowiedni strój oraz wyposażenie, które zapewni jej pełen komfort oraz bezpieczeństwo podczas jazdy. Poza takimi elementami jak kask, odpowiednie obuwie bardzo istotną sprawą jest też strój na ...
+                    </p>
+                    <a href="#"><button class="article__more">CZYTAJ WIĘCEJ</button></a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content">
+            <div class="icons">
+                <a href="#"><img src="img/logo-red.svg" alt="Logo"></a>
+                <div class="icons__social">
+                    <a href="#"><img src="img/fb.svg" alt="Logo facebook"></a>
+                    <a href="#"><img src="img/ig.svg" alt="Logo instagram"></a>
+                    <a href="#"><img src="img/twitter.svg" alt="Logo twitter"></a>
+                </div>
+            </div>
+            <div class="contact__wrapper">
+                <address>
+                    <h5 class="footer__title">Adres / godziny otwarcia</h5>
+                    <div class="contact__item">
+                        <img src="img/location.svg">
+                        <div class="contact__text">
+                            <p>LOGO INC</p>
+                            <p>ul. Katowicka 20, 41-800 Zabrze, Polska</p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <img src="img/watch.svg">
+                        <div class="contact__text">
+                            <p>Pn-Pt: 10-18 / Sb: 10-14</p>
+                        </div>
+                    </div>
+                </address>
+                <div class="contact__details">
+                    <h5 class="footer__title">Kontakt</h5>
+                    <div class="contact__item">
+                        <img src="img/phone.svg">
+                        <div class="contact__text">
+                            <p><a href="tel:+48 32 9532875">+48 32 9532875</a> / <a href="tel:+48 438 310 239">+48 438 310 239</a></p>
+                        </div>
+                    </div>
+                    <div class="contact__item">
+                        <img src="img/envelop.svg">
+                        <div class="contact__text">
+                            <p><a href="mailto:sklep@logo.pl">sklep@logo.pl</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <h5 class="footer__title">Informacje</h5>
+                <div class="menu__wrapper">
+                    <ul class="footer__list">
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Promocje</a></li>
+                        <li><a href="#">Nowe produkty</a></li>
+                        <li><a href="#">Najczęściej kupowane</a></li>
+                        <li><a href="#">Płatność i dostawa</a></li>
+                        <li><a href="#">Mapa strony</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li><a href="#">Zasady zwrotów</a></li>
+                        <li><a href="#">Regulamin sklepu</a></li>
+                        <li><a href="#">Polityka Prywatności</a></li>
+                        <li><a href="#">Rozmiarówka</a></li>
+                        <li><a href="#">Kontakt z nami</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bank">
+                <a href="#"><img src="img/saantander.png"></a>
+                <a href="#"><img src="img/credit.png"></a>
+            </div>
+        </div>
+        <div class="footer__rights">
+            <p>Copyright © 2023 - dih.pl    Projekt i realizacja <a href="dih.pl">dih.pl</a></p>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
